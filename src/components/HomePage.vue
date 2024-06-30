@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col w-full min-h-screen bg-slate-200">
-    <div>
-      <div class="flex h-11 mx-8 items-center justify-between">
+  <div class="flex flex-col w-full min-h-screen bg-[#f2f2f2]">
+    <div class="fixed-top">
+      <div class="flex h-11 px-8 items-center justify-between bg-[#f2f2f2]">
         <div class="flex">
           <h2 class="text-red-500">NEWS</h2>
           <h2 class="text-[#000]">ROOM</h2>
@@ -14,28 +14,67 @@
           <div class="text-base font-normal text-white">ADS 700x700px</div>
         </div>
       </div>
-      <div class="flex justify-between items-center bg-white">
-        <div class="flex h-11 items-center justify-between">
-          <div class="text-sm font-normal ml-5 px-3 leading-[2.8rem] bg-[red]">
-            Home
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
           </div>
-          <div class="text-sm font-normal px-3">Categories</div>
-          <div class="text-sm font-normal px-3">Single News</div>
-          <div class="text-sm font-normal px-3">Dropdown</div>
         </div>
-        <div class="flex items-center mr-8">
-          <input
-            type="text"
-            class="form-control"
-            aria-label="Dollar amount (with dot and two decimal places)"
-          />
-          <i
-            class="bi bi-search bg-[#ccc] px-3 leading-[2.5rem] items-center"
-          ></i>
-        </div>
-      </div>
+      </nav>
     </div>
-    <div class="flex items-center justify-center flex-grow">
+    <div class="flex mt-20 items-center justify-center flex-grow">
       <div class="w-3/5">
         <div class="row gx-0 mt-4">
           <div class="col flex items-center bg-white">
@@ -59,7 +98,7 @@
         </div>
         <!-- category -->
         <div class="row gx-0 mt-4">
-          <div class="col-8 bg-white">
+          <div class="col-8">
             <div
               id="carouselExampleControlsNoTouching"
               class="carousel slide"
@@ -114,52 +153,68 @@
               </button>
             </div>
           </div>
-          <div class="col-4 pl-3 flex flex-col justify-between">
-            <div class="row gx-0 h-10 flex items-center bg-white">
+          <div class="col-4 pl-3 d-flex flex-column justify-between">
+            <div class="row gx-0 h-10 d-flex align-items-center bg-white">
               <div class="flex-1">Categories</div>
               <div class="flex-1 font-light text-xs text-right mr-4">
                 View All
               </div>
             </div>
-            <div class="row gx-0 items-center relative">
+            <div
+              class="row gx-0 d-flex align-items-center relative custom-height"
+            >
               <img
-                class="w-12 h-18 object-cover"
+                class="w-12 h-100 object-cover"
                 src="../assets/img_title.jpg"
               />
-              <div class="font-light text-center text-xs absolute text-overlay">
-                Lorem ipsum dolor sit amet sit amet
+              <div
+                class="font-light text-center text-[16px] absolute text-overlay-category"
+              >
+                Sports
               </div>
             </div>
-            <div class="row gx-0 items-center relative">
+            <div
+              class="row gx-0 d-flex align-items-center relative custom-height"
+            >
               <img
-                class="w-12 h-12 object-cover"
+                class="w-12 h-100 object-cover"
                 src="../assets/img_slider2.jpg"
               />
-              <div class="font-light text-xs absolute text-overlay">
-                Lorem ipsum dolor sit amet sit amet
+              <div
+                class="font-light text-center text-[16px] absolute text-overlay-category"
+              >
+                Business
               </div>
             </div>
-            <div class="row gx-0 items-center relative">
+            <div
+              class="row gx-0 d-flex align-items-center relative custom-height"
+            >
               <img
-                class="w-12 h-12 object-cover"
+                class="w-12 h-100 object-cover"
                 src="../assets/img_slider1.jpg"
               />
-              <div class="font-light text-xs text-overlay">
-                Lorem ipsum dolor sit amet sit amet
+              <div
+                class="font-light text-center text-[16px] absolute text-overlay-category"
+              >
+                Technology
               </div>
             </div>
-            <div class="row gx-0 items-center relative">
+            <div
+              class="row gx-0 d-flex align-items-center relative custom-height"
+            >
               <img
-                class="w-12 h-12 object-cover"
+                class="w-12 h-100 object-cover"
                 src="../assets/img_title.jpg"
               />
-              <div class="font-light text-xs text-overlay">
-                Lorem ipsum dolor sit amet sit amet
+              <div
+                class="font-light text-center text-[16px] absolute text-overlay-category"
+              >
+                Entertaiment
               </div>
             </div>
           </div>
         </div>
-        <!-- category -->
+
         <div class="row gx-0 mt-4">
           <div class="row gx-0 h-10 flex items-center bg-white">
             <div class="flex-1 font-bold ml-4">Futured</div>
@@ -475,11 +530,26 @@ export default {
 };
 </script>
 <style scoped>
+.custom-height {
+  height: 70px;
+  position: relative;
+}
+.custom-height img {
+  height: 30%;
+}
 .text-overlay {
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
+  color: white;
+}
+.text-overlay-category {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 40%;
   color: white;
 }
 .col-custom {
@@ -493,6 +563,6 @@ export default {
 .img-custom {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensure the image covers the column area */
+  object-fit: cover;
 }
 </style>

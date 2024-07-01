@@ -65,7 +65,7 @@
               </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-disabled="true">Contact</a>
+              <a class="nav-link" href="/contact">Contact</a>
             </li>
           </ul>
           <form class="d-flex" role="search">

@@ -4,54 +4,20 @@
       <!-- category -->
       <div class="row gx-0 mt-4">
         <div class="flex">
-          <div class="mx-auto container-category">
-            <div class="flex justify-between items-center bg-white p-2">
-              <div class="flex flex-1 justify-between items-center bg-white">
-                <div class="font-bold ml-4">Technology</div>
-                <div class="font-light text-xs text-right mr-4">View All</div>
-              </div>
-            </div>
-            <div class="flex mt-4">
-              <div class="flex-1 bg-white">
-                <img
-                  src="https://fastly.picsum.photos/id/92/3568/2368.jpg?hmac=k-61p7oMQe6U59dEgm0Gu6bWTJGPfHblWxMskxTBZMo"
-                  class="w-full h-auto"
-                />
-                <div class="mt-4">
-                  <div class="font-thin text-[10px] mx-4">
-                    Technology / January 01, 2024
-                  </div>
-                  <div class="font-medium text-[16px] mx-4">
-                    Lorem ipsum dolor sit amet sit amet
-                  </div>
-                  <div class="font-thin text-[12px] mx-4 mb-2">
-                    Lorem ipsum dolor sit amet sit amet Lorem ipsum dolor sit
-                    amet sit amet amet sit amet
-                  </div>
-                </div>
-              </div>
-              <div class="flex-1 bg-white ml-4">
-                <img
-                  src="https://fastly.picsum.photos/id/99/4912/3264.jpg?hmac=jobkGP8_9Sch9BmMGe3xmm8yjCVQ3iSHrbu_4kOOciY"
-                  class="w-full h-auto"
-                />
-                <div class="mt-4">
-                  <div class="font-thin text-[10px] mx-4">
-                    Technology / January 01, 2024
-                  </div>
-                  <div class="font-medium text-[16px] mx-4">
-                    Lorem ipsum dolor sit amet sit amet
-                  </div>
-                  <div class="font-thin text-[12px] mx-4 mb-2">
-                    Lorem ipsum dolor sit amet sit amet Lorem ipsum dolor sit
-                    amet sit amet amet sit amet
-                  </div>
+          <div class="col-md-8">
+            <div class="mx-auto">
+              <div class="flex">
+                <div class="flex-1 bg-white">
+                  <img
+                    src="https://fastly.picsum.photos/id/133/2742/1828.jpg?hmac=0X5o8bHUICkOIvZHtykCRL50Bjn1N8w1AvkenF7n93E"
+                    class="w-full h-auto"
+                  />
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 container-category">
             <div class="mx-auto">
               <div
                 class="flex justify-between items-center bg-white p-2 ml-4 mg-left-po"
@@ -260,212 +226,199 @@
           </div>
         </div>
         <div class="flex">
-          <div class="mx-auto container-category">
-            <div class="flex mt-4">
-              <div class="flex-1 bg-white">
-                <img
-                  src="https://fastly.picsum.photos/id/64/4326/2884.jpg?hmac=9_SzX666YRpR_fOyYStXpfSiJ_edO3ghlSRnH2w09Kg"
-                  class="w-full h-auto"
-                />
-                <div class="mt-4">
-                  <div class="font-thin text-[10px] mx-4">
-                    Technology / January 01, 2024
+          <div class="mx-auto">
+            <div class="mx-auto bg-white">
+              <div class="px-4 mt-2">
+                <div class="font-thin text-[10px]">
+                  <span class="text-[red] font-medium">Technology</span> /
+                  <span>January 01, 2024</span>
+                </div>
+                <div class="font-bold text-[18px]">
+                  Lorem ipsum dolor sit amet sit
+                </div>
+                <div class="font-thin text-[14px]">
+                  Lorem ipsum dolor sit amet sit amet Lorem ipsum dolor sit amet
+                  sit amet amet sit amet Lorem ipsum dolor sit amet sit amet
+                  Lorem ipsum dolor sit amet sit amet amet sit ametLorem ipsum
+                  dolor sit amet sit amet Lorem ipsum dolor sit amet sit amet
+                  amet sit ametLorem ipsum dolor sit amet sit amet Lorem ipsum
+                  dolor sit
+                </div>
+                <div class="font-thin text-[14px] mt-2">
+                  Lorem ipsum dolor sit amet sit amet Lorem ipsum dolor sit amet
+                  sit amet amet sit amet Lorem ipsum dolor sit amet sit amet
+                  Lorem ipsum dolor sit amet sit amet amet sit ametLorem ipsum
+                  dolor sit amet sit amet Lorem ipsum dolor sit amet sit amet
+                  amet sit ametLorem ipsum dolor sit amet sit amet Lorem ipsum
+                  dolor sit
+                </div>
+                <div>
+                  <div class="font-bold text-[18px]">
+                    Lorem ipsum dolor sit amet sit
                   </div>
-                  <div class="font-medium text-[16px] mx-4">
-                    Lorem ipsum dolor sit amet sit amet
-                  </div>
-                  <div class="font-thin text-[12px] mx-4 mb-2">
-                    Lorem ipsum dolor sit amet sit amet Lorem ipsum dolor sit
-                    amet sit amet amet sit amet
+                  <img
+                    src="https://fastly.picsum.photos/id/26/4209/2769.jpg?hmac=vcInmowFvPCyKGtV7Vfh7zWcA_Z0kStrPDW3ppP0iGI"
+                    class="image-1"
+                    alt="Sample Image"
+                  />
+                  <div class="font-thin text-[14px] mt-2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus imperdiet, nulla et dictum interdum, nisi lorem
+                    egestas odio, vitae scelerisque enim ligula venenatis dolor.
+                    Maecenas nisl est, ultrices nec congue eget, auctor vitae
+                    massa. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Phasellus imperdiet, nulla et dictum interdum, nisi
+                    lorem egestas odio, vitae scelerisque enim ligula venenatis
+                    dolor. Maecenas nisl est, ultrices nec congue eget, auctor
+                    vitae massa.
                   </div>
                 </div>
-              </div>
-              <div class="flex-1 bg-white ml-4">
-                <img
-                  src="https://fastly.picsum.photos/id/65/4912/3264.jpg?hmac=uq0IxYtPIqRKinGruj45KcPPzxDjQvErcxyS1tn7bG0"
-                  class="w-full h-auto"
-                />
-                <div class="mt-4">
-                  <div class="font-thin text-[10px] mx-4">
-                    Technology / January 01, 2024
-                  </div>
-                  <div class="font-medium text-[16px] mx-4">
-                    Lorem ipsum dolor sit amet sit amet
-                  </div>
-                  <div class="font-thin text-[12px] mx-4 mb-2">
-                    Lorem ipsum dolor sit amet sit amet Lorem ipsum dolor sit
-                    amet sit amet amet sit amet
+                <div class="mt-2">
+                  <div class="font-bold text-[16px]">Lorem ipsum dolor</div>
+                  <img
+                    src="https://fastly.picsum.photos/id/26/4209/2769.jpg?hmac=vcInmowFvPCyKGtV7Vfh7zWcA_Z0kStrPDW3ppP0iGI"
+                    class="image-2"
+                    alt="Sample Image"
+                  />
+                  <div class="font-thin text-[14px] my-2">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus imperdiet, nulla et dictum interdum, nisi lorem
+                    egestas odio, vitae scelerisque enim ligula venenatis dolor.
+                    Maecenas nisl est, ultrices nec congue eget, auctor vitae
+                    massa. Lorem ipsum dolor sit amet, consectetur adipiscing
+                    elit. Phasellus imperdiet, nulla et dictum interdum, nisi
+                    lorem egestas odio, vitae scelerisque enim ligula venenatis
+                    dolor. Maecenas nisl est, ultrices nec congue eget, auctor
+                    vitae massa.massa. Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit. Phasellus imperdiet, nulla et dictum
+                    interdum, nisi lorem egestas odio, vitae scelerisque enim
+                    ligula venenatis dolor. Maecenas nisl est, ultrices nec
+                    congue eget, auctor vitae massa.
                   </div>
                 </div>
               </div>
             </div>
-            <div
-              class="flex text-2xl font-medium bg-black text-white items-center mt-4 p-2"
-            >
-              <div class="px-6 text-2xl font-medium text-white">html</div>
-              <div class="px-6 flex text-2xl font-medium text-white">|</div>
-              <div class="text-base font-normal text-white">ADS 700x700px</div>
-            </div>
-            <div class="row gx-0 mt-4">
-              <div class="flex-1">
-                <div class="flex bg-white mt-2 items-center p-2">
-                  <img class="w-12 h-12" src="../assets/img_title.jpg" />
-                  <div>
-                    <div class="font-thin text-[10px] mx-2">
-                      <span class="text-[red] font-medium">Technology</span> /
-                      <span>January 01, 2024</span>
-                    </div>
-                    <div class="font-medium text-[16px] mx-2">
-                      Lorem ipsum dolor sit amet sit amet
-                    </div>
-                  </div>
-                </div>
-                <div class="flex bg-white mt-2 items-center p-2">
-                  <img class="w-12 h-12" src="../assets/img_title.jpg" />
-                  <div>
-                    <div class="font-thin text-[10px] mx-2">
-                      <span class="text-[red] font-medium">Technology</span> /
-                      <span>January 01, 2024</span>
-                    </div>
-                    <div class="font-medium text-[16px] mx-2">
-                      Lorem ipsum dolor sit amet sit amet
-                    </div>
-                  </div>
-                </div>
-                <div class="flex bg-white mt-2 items-center p-2">
-                  <img class="w-12 h-12" src="../assets/img_title.jpg" />
-                  <div>
-                    <div class="font-thin text-[10px] mx-2">
-                      <span class="text-[red] font-medium">Technology</span> /
-                      <span>January 01, 2024</span>
-                    </div>
-                    <div class="font-medium text-[16px] mx-2">
-                      Lorem ipsum dolor sit amet sit amet
-                    </div>
-                  </div>
-                </div>
-                <div class="flex bg-white mt-2 items-center p-2">
-                  <img class="w-12 h-12" src="../assets/img_title.jpg" />
-                  <div>
-                    <div class="font-thin text-[10px] mx-2">
-                      <span class="text-[red] font-medium">Technology</span> /
-                      <span>January 01, 2024</span>
-                    </div>
-                    <div class="font-medium text-[16px] mx-2">
-                      Lorem ipsum dolor sit amet sit amet
-                    </div>
-                  </div>
-                </div>
-                <div class="flex bg-white mt-2 items-center p-2">
-                  <img class="w-12 h-12" src="../assets/img_title.jpg" />
-                  <div>
-                    <div class="font-thin text-[10px] mx-2">
-                      <span class="text-[red] font-medium">Technology</span> /
-                      <span>January 01, 2024</span>
-                    </div>
-                    <div class="font-medium text-[16px] mx-2">
-                      Lorem ipsum dolor sit amet sit amet
-                    </div>
-                  </div>
-                </div>
-                <div class="flex bg-white mt-2 items-center p-2">
-                  <img class="w-12 h-12" src="../assets/img_title.jpg" />
-                  <div>
-                    <div class="font-thin text-[10px] mx-2">
-                      <span class="text-[red] font-medium">Technology</span> /
-                      <span>January 01, 2024</span>
-                    </div>
-                    <div class="font-medium text-[16px] mx-2">
-                      Lorem ipsum dolor sit amet sit amet
-                    </div>
-                  </div>
-                </div>
-              </div>
 
-              <div class="flex-1 ml-4">
-                <div class="flex bg-white mt-2 items-center p-2">
+            <div class="row gx-0 mt-4 bg-white">
+              <div class="flex-1 px-4">
+                <div class="font-bold text-[16px]">3 Comment</div>
+                <div class="flex align-items-center">
                   <img
                     class="w-12 h-12"
-                    src="https://fastly.picsum.photos/id/112/4200/2800.jpg?hmac=8Qhr0ehkFOnlKO__aKhLMQTu2qzcAten9LHpBO6uk-k"
+                    src="https://fastly.picsum.photos/id/26/4209/2769.jpg?hmac=vcInmowFvPCyKGtV7Vfh7zWcA_Z0kStrPDW3ppP0iGI"
+                    alt="Sample Image"
                   />
-                  <div>
-                    <div class="font-thin text-[10px] mx-2">
+                  <div class="ml-2">
+                    <div class="font-thin text-[10px]">
                       <span class="text-[red] font-medium">Technology</span> /
                       <span>January 01, 2024</span>
                     </div>
-                    <div class="font-medium text-[16px] mx-2">
-                      Lorem ipsum dolor sit amet sit amet
+                    <div class="font-thin text-[14px]">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Phasellus imperdiet, nulla et dictum interdum, nisi lorem
                     </div>
+                    <span
+                      class="border text-sm text-[#8c9499] border-[#8c9499] p-1 mt-2"
+                      >Reply</span
+                    >
                   </div>
                 </div>
-                <div class="flex bg-white mt-2 items-center p-2">
+                <div class="flex align-items-center mt-3">
                   <img
                     class="w-12 h-12"
-                    src="https://fastly.picsum.photos/id/122/4147/2756.jpg?hmac=-B_1uAvYufznhjeA9xSSAJjqt07XrVzDWCf5VDNX0pQ"
+                    src="https://fastly.picsum.photos/id/26/4209/2769.jpg?hmac=vcInmowFvPCyKGtV7Vfh7zWcA_Z0kStrPDW3ppP0iGI"
+                    alt="Sample Image"
                   />
-                  <div>
-                    <div class="font-thin text-[10px] mx-2">
+                  <div class="ml-2">
+                    <div class="font-thin text-[10px]">
                       <span class="text-[red] font-medium">Technology</span> /
                       <span>January 01, 2024</span>
                     </div>
-                    <div class="font-medium text-[16px] mx-2">
-                      Lorem ipsum dolor sit amet sit amet
+                    <div class="font-thin text-[14px]">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Phasellus imperdiet, nulla et dictum interdum, nisi lorem
                     </div>
+                    <span
+                      class="border text-sm text-[#8c9499] border-[#8c9499] p-1 mt-2"
+                      >Reply</span
+                    >
                   </div>
                 </div>
-                <div class="flex bg-white mt-2 items-center p-2">
-                  <img class="w-12 h-12" src="../assets/img_title.jpg" />
-                  <div>
-                    <div class="font-thin text-[10px] mx-2">
+                <div class="flex align-items-center my-3">
+                  <img
+                    class="w-12 h-12"
+                    src="https://fastly.picsum.photos/id/26/4209/2769.jpg?hmac=vcInmowFvPCyKGtV7Vfh7zWcA_Z0kStrPDW3ppP0iGI"
+                    alt="Sample Image"
+                  />
+                  <div class="ml-2">
+                    <div class="font-thin text-[10px]">
                       <span class="text-[red] font-medium">Technology</span> /
                       <span>January 01, 2024</span>
                     </div>
-                    <div class="font-medium text-[16px] mx-2">
-                      Lorem ipsum dolor sit amet sit amet
+                    <div class="font-thin text-[14px]">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Phasellus imperdiet, nulla et dictum interdum, nisi lorem
                     </div>
+                    <span
+                      class="border text-sm text-[#8c9499] border-[#8c9499] p-1 mt-2"
+                      >Reply</span
+                    >
                   </div>
                 </div>
-                <div class="flex bg-white mt-2 items-center p-2">
-                  <img class="w-12 h-12" src="../assets/img_title.jpg" />
-                  <div>
-                    <div class="font-thin text-[10px] mx-2">
-                      <span class="text-[red] font-medium">Technology</span> /
-                      <span>January 01, 2024</span>
-                    </div>
-                    <div class="font-medium text-[16px] mx-2">
-                      Lorem ipsum dolor sit amet sit amet
-                    </div>
+              </div>
+            </div>
+
+            <div class="row gx-0 mt-4 bg-white">
+              <div class="flex-1 px-4">
+                <div class="font-bold text-[16px] mt-4">Leave a Comment</div>
+                <div class="align-items-center">
+                  <div class="ml-2">
+                    <div class="font-thin text-[14px]">Name*</div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Username"
+                      aria-label="Username"
+                      aria-describedby="addon-wrapping"
+                    />
                   </div>
-                </div>
-                <div class="flex bg-white mt-2 items-center p-2">
-                  <img class="w-12 h-12" src="../assets/img_title.jpg" />
-                  <div>
-                    <div class="font-thin text-[10px] mx-2">
-                      <span class="text-[red] font-medium">Technology</span> /
-                      <span>January 01, 2024</span>
-                    </div>
-                    <div class="font-medium text-[16px] mx-2">
-                      Lorem ipsum dolor sit amet sit amet
-                    </div>
+                  <div class="mt-2 ml-2">
+                    <div class="font-thin text-[14px]">Email*</div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Email"
+                      aria-label="Email"
+                      aria-describedby="addon-wrapping"
+                    />
                   </div>
-                </div>
-                <div class="flex bg-white mt-2 items-center p-2">
-                  <img class="w-12 h-12" src="../assets/img_title.jpg" />
-                  <div>
-                    <div class="font-thin text-[10px] mx-2">
-                      <span class="text-[red] font-medium">Technology</span> /
-                      <span>January 01, 2024</span>
-                    </div>
-                    <div class="font-medium text-[16px] mx-2">
-                      Lorem ipsum dolor sit amet sit amet
-                    </div>
+                  <div class="mt-2 ml-2">
+                    <div class="font-thin text-[14px]">Website</div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Website"
+                      aria-label="Website"
+                      aria-describedby="addon-wrapping"
+                    />
                   </div>
+                  <div class="my-2 ml-2">
+                    <div class="font-thin text-[14px]">Message*</div>
+                    <input
+                      type="text"
+                      class="form-control input-group"
+                      aria-describedby="addon-wrapping"
+                    />
+                  </div>
+                  <button type="button" class="btn btn-danger my-3 ml-2">
+                    Leave a Comment
+                  </button>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 container-category">
             <div class="mx-auto">
               <div class="flex display-none mt-3 items-center ml-2 p-2">
                 <img src="../assets/img_title.jpg" />
@@ -706,5 +659,31 @@ export default {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.flex-container {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.text-content {
+  margin-left: 20px;
+  font-size: 14px;
+  flex: 1;
+}
+
+.image-1 {
+  float: left;
+  margin-right: 10px;
+  max-width: 200px; /* Kích thước tối đa của hình ảnh */
+  height: auto;
+}
+.image-2 {
+  float: right;
+  margin-right: 10px;
+  max-width: 200px; /* Kích thước tối đa của hình ảnh */
+  height: auto;
+}
+.input-group {
+  height: 100px;
 }
 </style>

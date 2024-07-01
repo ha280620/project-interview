@@ -31,6 +31,17 @@ const home = [
                 component: () => import("../components/SingleNew.vue"),
             }
         ]
+    },
+    {
+        path: "/",
+        component: () => import("../layouts/HomePage.vue"),
+        children: [
+            {
+                path: 'contact',
+                name: 'contact-users',
+                component: () => import("../components/Contact.vue"),
+            }
+        ]
     }
 ]
 export default home;

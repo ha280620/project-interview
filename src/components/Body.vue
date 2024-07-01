@@ -266,7 +266,7 @@
               <img
                 src="https://fastly.picsum.photos/id/26/4209/2769.jpg?hmac=vcInmowFvPCyKGtV7Vfh7zWcA_Z0kStrPDW3ppP0iGI"
               />
-              <div class="mt-md-4">
+              <div>
                 <div class="font-thin text-[10px] mx-4">
                   Technology / Janualy 01,2024
                 </div>
@@ -279,7 +279,7 @@
               <img
                 src="https://fastly.picsum.photos/id/28/4928/3264.jpg?hmac=GnYF-RnBUg44PFfU5pcw_Qs0ReOyStdnZ8MtQWJqTfA"
               />
-              <div class="mt-md-4">
+              <div>
                 <div class="font-thin text-[10px] mx-4">
                   Technology / Janualy 01,2024
                 </div>
@@ -292,7 +292,7 @@
               <img
                 src="https://fastly.picsum.photos/id/29/4000/2670.jpg?hmac=rCbRAl24FzrSzwlR5tL-Aqzyu5tX_PA95VJtnUXegGU"
               />
-              <div class="mt-md-4">
+              <div>
                 <div class="font-thin text-[10px] mx-4">
                   Technology / Janualy 01,2024
                 </div>
@@ -305,7 +305,7 @@
               <img
                 src="https://fastly.picsum.photos/id/49/1280/792.jpg?hmac=NnUJy0O9-pXHLmY2loqVs2pJmgw9xzuixgYOk4ALCXU"
               />
-              <div class="mt-md-4">
+              <div>
                 <div class="font-thin text-[10px] mx-4">
                   Technology / Janualy 01,2024
                 </div>
@@ -338,7 +338,7 @@
               <img
                 src="https://fastly.picsum.photos/id/48/5000/3333.jpg?hmac=y3_1VDNbhii0vM_FN6wxMlvK27vFefflbUSH06z98so"
               />
-              <div class="mt-md-4">
+              <div>
                 <div class="font-thin text-[10px] mx-4">
                   Technology / Janualy 01,2024
                 </div>
@@ -351,7 +351,7 @@
               <img
                 src="https://fastly.picsum.photos/id/58/1280/853.jpg?hmac=YO3QnOm9TpyM5DqsJjoM4CHg8oIq4cMWLpd9ALoP908"
               />
-              <div class="mt-md-4">
+              <div>
                 <div class="font-thin text-[10px] mx-4">
                   Technology / Janualy 01,2024
                 </div>
@@ -364,7 +364,7 @@
               <img
                 src="https://fastly.picsum.photos/id/59/2464/1632.jpg?hmac=uTfe6jCzLvCzANvJgtpo-a0fKhO8BvjpwLNYX3lqx_Q"
               />
-              <div class="mt-md-4">
+              <div>
                 <div class="font-thin text-[10px] mx-4">
                   Technology / Janualy 01,2024
                 </div>
@@ -377,7 +377,7 @@
               <img
                 src="https://fastly.picsum.photos/id/55/4608/3072.jpg?hmac=ahGhylwdN52ULB37deeMZX6T_G7NiERtoPhwydMvUKQ"
               />
-              <div class="mt-md-4">
+              <div>
                 <div class="font-thin text-[10px] mx-4">
                   Technology / Janualy 01,2024
                 </div>

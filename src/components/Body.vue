@@ -184,7 +184,7 @@
       <div class="row gx-0 mt-4">
         <div class="row gx-0 h-10 flex items-center bg-white">
           <div class="flex-1 font-bold ml-4">Futured</div>
-          <div class="current-time flex-1">
+          <div class="current-time flex-1 display-none">
             {{ currentDate }}
           </div>
           <div class="flex-1 font-light text-xs text-right mr-4">View All</div>

@@ -184,61 +184,26 @@
       <div class="row gx-0 mt-4">
         <div class="row gx-0 h-10 flex items-center bg-white">
           <div class="flex-1 font-bold ml-4">Futured</div>
+          <div class="current-time flex-1">
+            {{ currentDate }}
+          </div>
           <div class="flex-1 font-light text-xs text-right mr-4">View All</div>
         </div>
 
         <div class="mx-auto">
           <div class="row mt-4">
-            <div class="col-md col-custom">
-              <img
-                src="https://fastly.picsum.photos/id/11/2500/1667.jpg?hmac=xxjFJtAPgshYkysU_aqx2sZir-kIOjNR9vx0te7GycQ"
-                class="img-custom"
-              />
+            <div
+              v-for="product in featureProducts"
+              :key="product.id"
+              class="col-md col-custom col-feature"
+            >
+              <img :src="product.image" class="img-custom" />
               <div class="text-overlay mb-2">
                 <div class="font-thin text-[10px] mx-4">
-                  Technology / Janualy 01,2024
+                  {{ product.category }} / {{ product.date }}
                 </div>
                 <div class="font-medium text-[16px] mx-4">
-                  Lorem ipsum dolor sit amet sit amet
-                </div>
-              </div>
-            </div>
-            <div class="col-md col-feature col-custom">
-              <img
-                src="https://fastly.picsum.photos/id/12/2500/1667.jpg?hmac=Pe3284luVre9ZqNzv1jMFpLihFI6lwq7TPgMSsNXw2w"
-                class="img-custom"
-              />
-              <div class="text-overlay mb-2">
-                <div class="font-thin text-[10px] mx-4">
-                  Technology / Janualy 01,2024
-                </div>
-                <div class="font-medium text-[16px] mx-4">
-                  Lorem ipsum dolor sit amet sit amet
-                </div>
-              </div>
-            </div>
-            <div class="col-md col-feature col-custom">
-              <img
-                src="https://fastly.picsum.photos/id/20/3670/2462.jpg?hmac=CmQ0ln-k5ZqkdtLvVO23LjVAEabZQx2wOaT4pyeG10I"
-                class="img-custom"
-              />
-              <div class="text-overlay mb-2">
-                <div class="font-thin text-[10px] mx-4">
-                  Technology / Janualy 01,2024
-                </div>
-                <div class="font-medium text-[16px] mx-4">
-                  Lorem ipsum dolor sit amet sit amet
-                </div>
-              </div>
-            </div>
-            <div class="col-md col-feature col-custom">
-              <img src="../assets/img_title.jpg" class="img-custom" />
-              <div class="text-overlay mb-2">
-                <div class="font-thin text-[10px] mx-4">
-                  Technology / Janualy 01,2024
-                </div>
-                <div class="font-medium text-[16px] mx-4">
-                  Lorem ipsum dolor sit amet sit amet
+                  {{ product.description }}
                 </div>
               </div>
             </div>
@@ -262,55 +227,21 @@
 
         <div class="mx-auto">
           <div class="row gx-0 mt-4">
-            <div class="col-md col-enter bg-white">
-              <img
-                src="https://fastly.picsum.photos/id/26/4209/2769.jpg?hmac=vcInmowFvPCyKGtV7Vfh7zWcA_Z0kStrPDW3ppP0iGI"
-              />
-              <div>
+            <div
+              v-for="product in businessProducts"
+              :key="product.id"
+              :class="[
+                'col-md col-enter bg-white mg-left',
+                { 'ml-5': product.id > 1 },
+              ]"
+            >
+              <img :src="product.image" />
+              <div class="mt-2">
                 <div class="font-thin text-[10px] mx-4">
-                  Technology / Janualy 01,2024
+                  {{ product.category }} / {{ product.date }}
                 </div>
                 <div class="font-medium text-[16px] mx-4">
-                  Lorem ipsum dolor sit amet sit amet
-                </div>
-              </div>
-            </div>
-            <div class="col-md col-enter bg-white ml-5 mg-left">
-              <img
-                src="https://fastly.picsum.photos/id/28/4928/3264.jpg?hmac=GnYF-RnBUg44PFfU5pcw_Qs0ReOyStdnZ8MtQWJqTfA"
-              />
-              <div>
-                <div class="font-thin text-[10px] mx-4">
-                  Technology / Janualy 01,2024
-                </div>
-                <div class="font-medium text-[16px] mx-4">
-                  Lorem ipsum dolor sit amet sit amet
-                </div>
-              </div>
-            </div>
-            <div class="col-md col-enter bg-white ml-5 mg-left">
-              <img
-                src="https://fastly.picsum.photos/id/29/4000/2670.jpg?hmac=rCbRAl24FzrSzwlR5tL-Aqzyu5tX_PA95VJtnUXegGU"
-              />
-              <div>
-                <div class="font-thin text-[10px] mx-4">
-                  Technology / Janualy 01,2024
-                </div>
-                <div class="font-medium text-[16px] mx-4">
-                  Lorem ipsum dolor sit amet sit amet
-                </div>
-              </div>
-            </div>
-            <div class="col-md col-enter bg-white ml-5 mg-left">
-              <img
-                src="https://fastly.picsum.photos/id/49/1280/792.jpg?hmac=NnUJy0O9-pXHLmY2loqVs2pJmgw9xzuixgYOk4ALCXU"
-              />
-              <div>
-                <div class="font-thin text-[10px] mx-4">
-                  Technology / Janualy 01,2024
-                </div>
-                <div class="font-medium text-[16px] mx-4">
-                  Lorem ipsum dolor sit amet sit amet
+                  {{ product.description }}
                 </div>
               </div>
             </div>
@@ -334,55 +265,21 @@
 
         <div class="mx-auto">
           <div class="row gx-0 mt-4 flex">
-            <div class="col-md col-enter bg-white">
-              <img
-                src="https://fastly.picsum.photos/id/48/5000/3333.jpg?hmac=y3_1VDNbhii0vM_FN6wxMlvK27vFefflbUSH06z98so"
-              />
-              <div>
+            <div
+              v-for="product in businessProducts"
+              :key="product.id"
+              :class="[
+                'col-md col-enter bg-white mg-left',
+                { 'ml-5': product.id > 1 },
+              ]"
+            >
+              <img :src="product.image" />
+              <div class="mt-2">
                 <div class="font-thin text-[10px] mx-4">
-                  Technology / Janualy 01,2024
+                  {{ product.category }} / {{ product.date }}
                 </div>
                 <div class="font-medium text-[16px] mx-4">
-                  Lorem ipsum dolor sit amet sit amet
-                </div>
-              </div>
-            </div>
-            <div class="col-md col-enter bg-white mg-left ml-5">
-              <img
-                src="https://fastly.picsum.photos/id/58/1280/853.jpg?hmac=YO3QnOm9TpyM5DqsJjoM4CHg8oIq4cMWLpd9ALoP908"
-              />
-              <div>
-                <div class="font-thin text-[10px] mx-4">
-                  Technology / Janualy 01,2024
-                </div>
-                <div class="font-medium text-[16px] mx-4">
-                  Lorem ipsum dolor sit amet sit amet
-                </div>
-              </div>
-            </div>
-            <div class="col-md col-enter bg-white mg-left ml-5">
-              <img
-                src="https://fastly.picsum.photos/id/59/2464/1632.jpg?hmac=uTfe6jCzLvCzANvJgtpo-a0fKhO8BvjpwLNYX3lqx_Q"
-              />
-              <div>
-                <div class="font-thin text-[10px] mx-4">
-                  Technology / Janualy 01,2024
-                </div>
-                <div class="font-medium text-[16px] mx-4">
-                  Lorem ipsum dolor sit amet sit amet
-                </div>
-              </div>
-            </div>
-            <div class="col-md col-enter bg-white mg-left ml-5">
-              <img
-                src="https://fastly.picsum.photos/id/55/4608/3072.jpg?hmac=ahGhylwdN52ULB37deeMZX6T_G7NiERtoPhwydMvUKQ"
-              />
-              <div>
-                <div class="font-thin text-[10px] mx-4">
-                  Technology / Janualy 01,2024
-                </div>
-                <div class="font-medium text-[16px] mx-4">
-                  Lorem ipsum dolor sit amet sit amet
+                  {{ product.description }}
                 </div>
               </div>
             </div>
@@ -400,39 +297,22 @@
               </div>
             </div>
             <div class="flex mt-4">
-              <div class="flex-1 bg-white">
-                <img
-                  src="https://fastly.picsum.photos/id/64/4326/2884.jpg?hmac=9_SzX666YRpR_fOyYStXpfSiJ_edO3ghlSRnH2w09Kg"
-                  class="w-full h-auto"
-                />
+              <div
+                v-for="product in techProducts"
+                :key="product.id"
+                class="flex-1 bg-white"
+                :class="['flex-1 bg-white', { 'ml-5': product.id > 1 }]"
+              >
+                <img :src="product.image" />
                 <div class="mt-4">
                   <div class="font-thin text-[10px] mx-4">
-                    Technology / January 01, 2024
+                    {{ product.category }} / {{ product.date }}
                   </div>
                   <div class="font-medium text-[16px] mx-4">
-                    Lorem ipsum dolor sit amet sit amet
+                    {{ product.name }}
                   </div>
                   <div class="font-thin text-[12px] mx-4 mb-2">
-                    Lorem ipsum dolor sit amet sit amet Lorem ipsum dolor sit
-                    amet sit amet amet sit amet
-                  </div>
-                </div>
-              </div>
-              <div class="flex-1 bg-white ml-4">
-                <img
-                  src="https://fastly.picsum.photos/id/65/4912/3264.jpg?hmac=uq0IxYtPIqRKinGruj45KcPPzxDjQvErcxyS1tn7bG0"
-                  class="w-full h-auto"
-                />
-                <div class="mt-4">
-                  <div class="font-thin text-[10px] mx-4">
-                    Technology / January 01, 2024
-                  </div>
-                  <div class="font-medium text-[16px] mx-4">
-                    Lorem ipsum dolor sit amet sit amet
-                  </div>
-                  <div class="font-thin text-[12px] mx-4 mb-2">
-                    Lorem ipsum dolor sit amet sit amet Lorem ipsum dolor sit
-                    amet sit amet amet sit amet
+                    {{ product.description }}
                   </div>
                 </div>
               </div>
@@ -585,13 +465,299 @@
             </div>
           </div>
         </div>
+        <div class="flex">
+          <div class="mx-auto container-category">
+            <div class="flex mt-1">
+              <div class="flex-1 bg-white">
+                <div class="flex bg-white mt-2 items-center p-2">
+                  <img class="w-12 h-12" src="../assets/img_title.jpg" />
+                  <div>
+                    <div class="font-thin text-[10px] mx-2">
+                      <span class="text-[red] font-medium">Technology</span> /
+                      <span>January 01, 2024</span>
+                    </div>
+                    <div class="font-medium text-[16px] mx-2">
+                      Lorem ipsum dolor sit amet sit amet
+                    </div>
+                  </div>
+                </div>
+                <div class="flex bg-white mt-2 items-center p-2">
+                  <img
+                    class="w-12 h-12"
+                    src="https://fastly.picsum.photos/id/101/2621/1747.jpg?hmac=cu15YGotS0gIYdBbR1he5NtBLZAAY6aIY5AbORRAngs"
+                  />
+                  <div>
+                    <div class="font-thin text-[10px] mx-2">
+                      <span class="text-[red] font-medium">Technology</span> /
+                      <span>January 01, 2024</span>
+                    </div>
+                    <div class="font-medium text-[16px] mx-2">
+                      Relaxation Retreat in the Maldives
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-1 bg-white ml-4">
+                <div class="flex bg-white mt-2 items-center p-2">
+                  <img class="w-12 h-12" src="../assets/img_title.jpg" />
+                  <div>
+                    <div class="font-thin text-[10px] mx-2">
+                      <span class="text-[red] font-medium">Technology</span> /
+                      <span>January 01, 2024</span>
+                    </div>
+                    <div class="font-medium text-[16px] mx-2">
+                      Journey Through the History of Egypt
+                    </div>
+                  </div>
+                </div>
+                <div class="flex bg-white mt-2 items-center p-2">
+                  <img
+                    class="w-12 h-12"
+                    src="https://fastly.picsum.photos/id/101/2621/1747.jpg?hmac=cu15YGotS0gIYdBbR1he5NtBLZAAY6aIY5AbORRAngs"
+                  />
+                  <div>
+                    <div class="font-thin text-[10px] mx-2">
+                      <span class="text-[red] font-medium">Technology</span> /
+                      <span>January 01, 2024</span>
+                    </div>
+                    <div class="font-medium text-[16px] mx-2">
+                      Lorem ipsum dolor sit amet sit amet
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="flex text-2xl font-medium bg-black text-white items-center mt-2 p-2"
+            >
+              <div class="px-6 text-2xl font-medium text-white">html</div>
+              <div class="px-6 flex text-2xl font-medium text-white">|</div>
+              <div class="text-base font-normal text-white">ADS 700x700px</div>
+            </div>
+            <div class="row gx-0 mt-2">
+              <div class="flex-1">
+                <div class="flex-1 bg-white">
+                  <img
+                    src="https://fastly.picsum.photos/id/133/2742/1828.jpg?hmac=0X5o8bHUICkOIvZHtykCRL50Bjn1N8w1AvkenF7n93E"
+                    class="w-full h-auto"
+                  />
+                  <div class="mt-4">
+                    <div class="font-thin text-[10px] mx-4">
+                      Technology / January 01, 2024
+                    </div>
+                    <div class="font-medium text-[16px] mx-4">
+                      Discover the Serenity of Bali's Beaches
+                    </div>
+                    <div class="font-thin text-[12px] mx-4 mb-2">
+                      City Lights: Vibrant Tokyo Night,City Lights: Vibrant
+                      Tokyo Night
+                    </div>
+                  </div>
+                </div>
+                <div class="flex bg-white mt-2 items-center p-2">
+                  <img class="w-12 h-12" src="../assets/img_title.jpg" />
+                  <div>
+                    <div class="font-thin text-[10px] mx-2">
+                      <span class="text-[red] font-medium">Technology</span> /
+                      <span>January 01, 2024</span>
+                    </div>
+                    <div class="font-medium text-[14px] mx-2">
+                      Relaxation Retreat in the Maldives
+                    </div>
+                  </div>
+                </div>
+                <div class="flex bg-white mt-2 items-center p-2">
+                  <img class="w-12 h-12" src="../assets/img_title.jpg" />
+                  <div>
+                    <div class="font-thin text-[10px] mx-2">
+                      <span class="text-[red] font-medium">Technology</span> /
+                      <span>January 01, 2024</span>
+                    </div>
+                    <div class="font-medium text-[14px] mx-2">
+                      Relaxation Retreat in the Maldives
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex-1 ml-4">
+                <div class="flex-1 bg-white">
+                  <img
+                    src="https://fastly.picsum.photos/id/122/4147/2756.jpg?hmac=-B_1uAvYufznhjeA9xSSAJjqt07XrVzDWCf5VDNX0pQ"
+                    class="w-full h-auto"
+                  />
+                  <div class="mt-4">
+                    <div class="font-thin text-[10px] mx-4">
+                      Technology / January 01, 2024
+                    </div>
+                    <div class="font-medium text-[16px] mx-4">
+                      Lorem ipsum dolor sit amet sit amet
+                    </div>
+                    <div class="font-thin text-[12px] mx-4 mb-2">
+                      Charming Villages of Provence, France, Charming Villages
+                      of Provence, France
+                    </div>
+                  </div>
+                </div>
+                <div class="flex bg-white mt-2 items-center p-2">
+                  <img
+                    class="w-12 h-12"
+                    src="https://fastly.picsum.photos/id/122/4147/2756.jpg?hmac=-B_1uAvYufznhjeA9xSSAJjqt07XrVzDWCf5VDNX0pQ"
+                  />
+                  <div>
+                    <div class="font-thin text-[10px] mx-2">
+                      <span class="text-[red] font-medium">Technology</span> /
+                      <span>January 01, 2024</span>
+                    </div>
+                    <div class="font-medium text-[14px] mx-2">
+                      Lorem ipsum dolor sit amet sit amet
+                    </div>
+                  </div>
+                </div>
+                <div class="flex bg-white mt-2 items-center p-2">
+                  <img class="w-12 h-12" src="../assets/img_title.jpg" />
+                  <div>
+                    <div class="font-thin text-[10px] mx-2">
+                      <span class="text-[red] font-medium">Technology</span> /
+                      <span>January 01, 2024</span>
+                    </div>
+                    <div class="font-medium text-[14px] mx-2">
+                      Lorem ipsum dolor sit amet sit amet
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="mx-auto">
+              <div class="flex display-none mt-3 items-center ml-2 p-2">
+                <img src="../assets/img_title.jpg" />
+              </div>
+              <div
+                class="flex justify-between items-center bg-white p-2 mt-2 ml-4 mg-left-po"
+              >
+                <div class="flex flex-1 justify-between items-center bg-white">
+                  <div class="font-bold ml-4">Trainding</div>
+                </div>
+              </div>
+
+              <div class="ml-4 mg-left-po">
+                <div
+                  v-for="product in traindingProducts"
+                  :key="product.id"
+                  class="flex bg-white mt-2 items-center p-2"
+                >
+                  <img class="w-12 h-12" :src="product.image" />
+                  <div>
+                    <div class="font-thin text-[10px] mx-2">
+                      <span class="text-[red] font-medium">{{
+                        product.category
+                      }}</span>
+                      /
+                      <span> {{ product.date }}</span>
+                    </div>
+                    <div class="font-medium text-[14px] mx-2">
+                      {{ product.description }}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mt-4 ml-4 mg-left">
+                <div class="row gx-0 mt-4">
+                  <div class="bg-white p-2">
+                    <div class="font-bold ml-4">Tag</div>
+                  </div>
+                  <div class="flex ml-1">
+                    <span
+                      class="border text-sm text-[#8c9499] border-[#8c9499] p-1"
+                      >categories</span
+                    >
+                    <span
+                      class="border text-sm text-[#8c9499] border-[#8c9499] p-1 ml-1"
+                      >Business</span
+                    >
+                    <span
+                      class="border text-sm text-[#8c9499] border-[#8c9499] p-1 ml-1"
+                      >Corparate</span
+                    >
+                  </div>
+                  <div class="flex ml-1">
+                    <span
+                      class="border text-sm text-[#8c9499] border-[#8c9499] p-1"
+                      >categories</span
+                    >
+                    <span
+                      class="border text-sm text-[#8c9499] border-[#8c9499] p-1 ml-1"
+                      >Business</span
+                    >
+                    <span
+                      class="border text-sm text-[#8c9499] border-[#8c9499] p-1 ml-1"
+                      >Corparate</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 <script>
+import {
+  getFeatureProducts,
+  getTechProducts,
+  getBusinessProducts,
+  getEntertaimentProducts,
+  getTraindingProducts,
+} from "../store/db";
 export default {
   name: "Body",
+  data() {
+    return {
+      featureProducts: [],
+      techProducts: [],
+      businessProducts: [],
+      entertaimentProducts: [],
+      traindingProducts: [],
+      currentDate: "",
+    };
+  },
+  methods: {
+    getCurrentDate() {
+      const now = new Date();
+      const hours = String(now.getHours()).padStart(2, "0");
+      const minutes = String(now.getMinutes()).padStart(2, "0");
+      const year = now.getUTCFullYear();
+      const day = now.getUTCDate();
+      const seconds = String(now.getSeconds()).padStart(2, "0");
+      const month = String(now.getUTCMonth() + 1).padStart(2, "0");
+      this.currentDate = `${year}-${month}-${day} ${hours}:${minutes}${seconds}`;
+    },
+  },
+  mounted() {
+    getFeatureProducts().then((products) => {
+      this.featureProducts = products;
+    });
+    getTechProducts().then((products) => {
+      this.techProducts = products;
+    });
+    getBusinessProducts().then((products) => {
+      this.businessProducts = products;
+    });
+    getEntertaimentProducts().then((products) => {
+      this.entertaimentProducts = products;
+    });
+    getTraindingProducts().then((products) => {
+      this.traindingProducts = products;
+    });
+    this.getCurrentDate();
+    setInterval(this.getCurrentDate, 1000);
+  },
 };
 </script>
 <style scoped>
@@ -671,5 +837,15 @@ export default {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.current-date {
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 </style>

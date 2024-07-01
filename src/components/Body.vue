@@ -1,8 +1,8 @@
 <template>
   <div class="flex mt-20 w-full items-center justify-center flex-grow">
     <div class="w-3/5">
-      <div class="row container-category gx-0 mt-4">
-        <div class="col flex items-center bg-white">
+      <div class="row gx-0 mt-4">
+        <div class="col-md flex items-center bg-white">
           <img
             class="w-12 h-12"
             src="https://fastly.picsum.photos/id/91/3504/2336.jpg?hmac=tK6z7RReLgUlCuf4flDKeg57o6CUAbgklgLsGL0UowU"
@@ -11,7 +11,7 @@
             Lorem ipsum dolor sit amet sit amet dolor sit amet sit amet
           </div>
         </div>
-        <div class="col ml-4 flex items-center bg-white">
+        <div class="col container-category ml-4 flex items-center bg-white">
           <img
             class="w-12 h-12"
             src="https://fastly.picsum.photos/id/91/3504/2336.jpg?hmac=tK6z7RReLgUlCuf4flDKeg57o6CUAbgklgLsGL0UowU"
@@ -20,7 +20,7 @@
             Lorem ipsum dolor sit amet sit amet dolor sit amet sit amet
           </div>
         </div>
-        <div class="col ml-4 flex items-center bg-white">
+        <div class="col ml-4 container-category flex items-center bg-white">
           <img
             class="w-12 h-12"
             src="https://fastly.picsum.photos/id/91/3504/2336.jpg?hmac=tK6z7RReLgUlCuf4flDKeg57o6CUAbgklgLsGL0UowU"
@@ -31,34 +31,64 @@
         </div>
       </div>
       <!-- category -->
-      <div class="row container-category gx-0 mt-4">
-        <div class="col-8">
+      <div class="row gx-0 mt-4">
+        <div class="col-md-8">
           <div
             id="carouselExampleInterval"
             class="carousel slide"
             data-bs-ride="carousel"
           >
             <div class="carousel-inner">
-              <div class="carousel-item active" data-bs-interval="10000">
+              <div
+                class="carousel-item carousel-container active"
+                data-bs-interval="10000"
+              >
                 <img
                   src="../assets/img_slider2.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
+                <div class="carousel-caption">
+                  <div class="font-thin text-[12px]">
+                    Technology / Janualy 01,2024
+                  </div>
+                  <div class="font-medium text-[20px] carousel-text">
+                    Lorem ipsum dolor sit amet sit amet
+                  </div>
+                </div>
               </div>
-              <div class="carousel-item" data-bs-interval="2000">
+              <div
+                class="carousel-item carousel-container"
+                data-bs-interval="2000"
+              >
                 <img
                   src="../assets/img_slider2.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
+                <div class="carousel-caption">
+                  <div class="font-thin text-[12px] mx-4">
+                    Technology / Janualy 01,2024
+                  </div>
+                  <div class="font-medium text-[20px] carousel-text">
+                    Lorem ipsum dolor sit amet sit amet
+                  </div>
+                </div>
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item carousel-container">
                 <img
-                  src="../assets/img_title.jpg"
+                  src="../assets/img_slider2.jpg"
                   class="d-block w-100"
                   alt="..."
                 />
+                <div class="carousel-caption">
+                  <div class="font-thin text-[12px]">
+                    Technology / Janualy 01,2024
+                  </div>
+                  <div class="font-medium text-[20px] carousel-text">
+                    Lorem ipsum dolor sit amet sit amet
+                  </div>
+                </div>
               </div>
             </div>
             <button
@@ -87,15 +117,17 @@
             </button>
           </div>
         </div>
-        <div class="col-4 pl-4 flex flex-column justify-between">
-          <div class="row ml-6 gx-0 h-10 d-flex align-items-center bg-white">
+        <div class="col-md-4 pl-4 flex flex-column justify-between">
+          <div
+            class="row col-feature ml-6 gx-0 h-10 d-flex align-items-center bg-white"
+          >
             <div class="flex-1">Categories</div>
             <div class="flex-1 font-light text-xs text-right mr-4">
               View All
             </div>
           </div>
           <div
-            class="row gx-0 d-flex align-items-center relative custom-height"
+            class="row col-feature gx-0 d-flex align-items-center relative custom-height"
           >
             <img
               class="w-12 h-100 object-cover"
@@ -108,7 +140,7 @@
             </div>
           </div>
           <div
-            class="row gx-0 d-flex align-items-center relative custom-height"
+            class="row gx-0 col-feature d-flex align-items-center relative custom-height"
           >
             <img
               class="w-12 h-100 object-cover"
@@ -121,7 +153,7 @@
             </div>
           </div>
           <div
-            class="row gx-0 d-flex align-items-center relative custom-height"
+            class="row gx-0 col-feature d-flex align-items-center relative custom-height"
           >
             <img
               class="w-12 h-100 object-cover"
@@ -134,7 +166,7 @@
             </div>
           </div>
           <div
-            class="row gx-0 d-flex align-items-center relative custom-height"
+            class="row gx-0 col-feature d-flex align-items-center relative custom-height"
           >
             <img
               class="w-12 h-100 object-cover"
@@ -413,7 +445,7 @@
                 class="flex justify-between items-center bg-white p-2 ml-4 mg-left-po"
               >
                 <div class="flex flex-1 justify-between items-center bg-white">
-                  <div class="font-bold ml-4">Popular</div>
+                  <div class="font-bold ml-4">Follow us</div>
                 </div>
               </div>
 
@@ -597,6 +629,13 @@ export default {
   }
   .popular-container {
     display: inline-block !important;
+  }
+  .carousel-container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .carousel-text {
+    font-size: 12px;
   }
 }
 .popular-container {

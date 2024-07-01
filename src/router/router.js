@@ -15,9 +15,20 @@ const home = [
         component: () => import("../layouts/HomePage.vue"),
         children: [
             {
-                path: 'cate',
+                path: 'category',
                 name: 'category-users',
                 component: () => import("../components/Category.vue"),
+            }
+        ]
+    },
+    {
+        path: "/",
+        component: () => import("../layouts/HomePage.vue"),
+        children: [
+            {
+                path: 'single',
+                name: 'single-users',
+                component: () => import("../components/SingleNew.vue"),
             }
         ]
     }

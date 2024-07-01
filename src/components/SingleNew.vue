@@ -626,7 +626,7 @@
 </template>
 <script>
 export default {
-  name: "Body",
+  name: "SingleNew",
 };
 </script>
 <style scoped>

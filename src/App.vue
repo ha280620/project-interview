@@ -1,11 +1,7 @@
-<script setup>
-import HomePage from './components/HomePage.vue'
-</script>
+<script setup></script>
 
 <template>
-  <HomePage msg="Vite + Vue" />
+  <router-view></router-view>
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
